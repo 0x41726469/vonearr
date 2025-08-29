@@ -7,6 +7,22 @@
   <title>.arr</title>
   <meta name="description"
     content="A creative portfolio by .arr, designed as a retro desktop operating system experience. Explore projects, games, and more." />
+  <script>
+    // Ambil nilai mentah dari Vercel
+    const vercelSupabaseUrl = "${process.env.SUPABASE_URL}";
+    const vercelSupabaseKey = "${process.env.SUPABASE_ANON_KEY}";
+
+    window.env = {
+      // Jika nilai dari Vercel masih berupa placeholder, gunakan nilai lokal. Jika tidak, gunakan nilai dari Vercel.
+      SUPABASE_URL: vercelSupabaseUrl.startsWith("$")
+        ? "https://mxzaplrwnewzocvbawgg.supabase.co" // <-- Nilai lokal Anda
+        : vercelSupabaseUrl,
+
+      SUPABASE_ANON_KEY: vercelSupabaseKey.startsWith("$")
+        ? "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im14emFwbHJ3bmV3em9jdmJhd2dnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY0MDk2MzMsImV4cCI6MjA3MTk4NTYzM30.eTaJJMon9MeAwcZ3hGTS7LsHheYb1dHzXPTPE8ZJuEs" // <-- Nilai lokal Anda (GANTI DENGAN KUNCI ASLI)
+        : vercelSupabaseKey
+    };
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
@@ -448,7 +464,7 @@
   <!-- Script eksternal -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="script.js" type="module"></script>
+  <script src="script.js"></script>
 
 </body>
 
