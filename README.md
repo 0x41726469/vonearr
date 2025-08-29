@@ -12,7 +12,8 @@
     <img src="https://img.shields.io/github/last-commit/0x41726469/vonearr?style=for-the-badge&color=blue" alt="Last Commit Badge"/>
   </p>
 
-  <a href="LINK_DEPLOY_VERCEL_ANDA" target="_blank">
+  <a href="vonearr.vercel.app
+" target="_blank">
     <img src="https://img.shields.io/badge/Lihat_Live_Demo-22a5b3?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/>
   </a>
 </div>
@@ -103,5 +104,3 @@ Jika Anda tertarik untuk berdiskusi, berkolaborasi, atau sekadar menyapa, jangan
   <a href="https://www.linkedin.com/in/0x41726469/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:ardikingsblue33@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
-<a href="https://www.instagram.com/0x41726469.sys/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white" alt="Instagram"/></a>
-
