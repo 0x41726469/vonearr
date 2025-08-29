@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>.arr</title>
+  <meta name="description"
+    content="A creative portfolio by .arr, designed as a retro desktop operating system experience. Explore projects, games, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Layar Loading dengan animasi teks -->
+  <div id="loading-screen">
+    <div class="loading-text">
+      <span>v</span><span>o</span><span>n</span><span>e</span><span>a</span><span>r</span><span>r</span>
+    </div>
+  </div>
+
+  <!-- Teks di pojok kanan atas -->
+  <div class="right-teks">0x41726469.sys</div>
+
+  <!-- Desktop dengan ikon-ikon aplikasi -->
+  <main class="desktop">
+    <!-- Ikon About Me -->
+    <div class="icon" data-window-template="about-window" tabindex="0" role="button" aria-label="About Me">
+      <img src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png" alt="About Me Icon" />
+      <span>About Me</span>
+    </div>
+
+    <!-- Ikon Projects -->
+    <div class="icon" data-window-template="projects-window" tabindex="0" role="button" aria-label="Projects">
+      <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Projects Folder Icon" />
+      <span>Projects</span>
+    </div>
+
+    <!-- Ikon Mentors and Companions -->
+    <div class="icon" data-window-template="mentors-window" tabindex="0" role="button"
+      aria-label="Mentors and Companions">
+      <img src="https://win98icons.alexmeub.com/icons/png/address_book_users.png" alt="Mentors & Companions Icon" />
+      <span>Mentors & Companions</span>
+    </div>
+
+    <!-- Ikon Suggestions -->
+    <div class="icon" data-window-template="suggestion-window" tabindex="0" role="button" aria-label="Suggestions">
+      <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-5.png" alt="Suggestions Icon" />
+      <span>Suggestions</span>
+    </div>
+
+    <!-- Ikon Contact -->
+    <div class="icon" data-window-template="contact-window" tabindex="0" role="button" aria-label="Contact">
+      <img src="https://win98icons.alexmeub.com/icons/png/modem-5.png" alt="Contact Icon" />
+      <span>Contact</span>
+    </div>
+
+    <!-- Ikon Terminal -->
+    <div class="icon" data-window-template="terminal-window" tabindex="0" role="button" aria-label="Terminal">
+      <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="Terminal Icon" />
+      <span>Terminal</span>
+    </div>
+
+    <!-- Ikon Snake Game -->
+    <div class="icon" data-window-template="snake-window" tabindex="0" role="button" aria-label="Snake Game">
+      <img src="https://s6.imgcdn.dev/YNaKtD.png" alt="Snake Game Icon" />
+      <span>Snake</span>
+    </div>
+
+    <!-- Ikon 2048 Game -->
+    <div class="icon" data-window-template="2048-window" tabindex="0" role="button" aria-label="2048 Game">
+      <img
+        src="https://play-lh.googleusercontent.com/WLGnCWjm6wQ5g1VY37kTuRORrRBMMlqYLqOpz0TP7Xj-jGUNE_Js2JJf76cEePLiz4Y=w240-h480-rw"
+        alt="2048 Game Icon" />
+      <span>2048</span>
+    </div>
+
+    <!-- Ikon Recycle Bin -->
+    <div id="recycle-bin-icon" class="icon" data-window-template="recycle-bin-window" tabindex="0" role="button"
+      aria-label="Recycle Bin">
+      <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_full_2k-4.png" alt="Recycle Bin Icon" />
+      <span>Recycle Bin</span>
+    </div>
+  </main>
+
+  <!-- Template untuk semua jendela aplikasi -->
+  <div id="window-templates" style="display: none">
+
+    <!-- Jendela About Me -->
+    <article id="about-window" class="window" aria-label="About Me Window">
+      <div class="title-bar">
+        <span>About Me</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content">
+        <h2>Hello, I'm .arr</h2>
+        <p>
+          Started out as IT Support, then drifted into coding, then design,
+          and somehow ended up having fun playing around with AI. All the
+          projects here are basically my random ideas, but the one doing the
+          hard work is AI… I just jump in and type a little so it looks like I
+          contributed hehe.
+        </p>
+        <p>
+          That’s me in short. For the long story, well… my CV’s right below!
+        </p>
+        <p style="margin-top: 20px">
+          <a href="/assets/Cv-me.pdf" download="Cv-me.pdf" style="
+                text-decoration: none;
+                padding: 5px 10px;
+                display: inline-block;
+              ">
+            <img src="https://win98icons.alexmeub.com/icons/png/winrep-1.png" alt="Download icon" style="
+                  width: 20px;
+                  height: 20px;
+                  vertical-align: middle;
+                  margin-right: 5px;
+                " />
+            Get my CV
+          </a>
+        </p>
+      </div>
+    </article>
+
+    <!-- Jendela Projects -->
+    <article id="projects-window" class="window" style="width: 550px; height: 450px" aria-label="Projects Window">
+      <div class="title-bar">
+        <span>Projects</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Downloadable Projects</h3>
+        <div class="project-files-list"></div>
+        <div class="project-admin-controls">
+          <button class="admin-login-btn">Admin Upload</button>
+          <div class="admin-upload-section" style="display: none">
+            <h4>Upload a new project file:</h4>
+            <input type="file" class="project-file-input" aria-label="Select file to upload" />
+            <button class="project-upload-btn">Upload</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Jendela Recycle Bin -->
+    <article id="recycle-bin-window" class="window" style="width: 550px; height: 450px" aria-label="Recycle Bin Window">
+      <div class="title-bar">
+        <span>Recycle Bin</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="recycle-bin-content">
+        <div class="recycle-bin-controls">
+          <button class="empty-bin-btn" style="display: none">
+            Empty Recycle Bin
+          </button>
+          <button class="admin-login-btn">Admin Access</button>
+        </div>
+        <div class="recycle-bin-list"></div>
+      </div>
+    </article>
+
+    <!-- Jendela Mentors and Companions -->
+    <article id="mentors-window" class="window" style="width: 480px; height: 350px"
+      aria-label="Mentors and Companions Window">
+      <div class="title-bar">
+        <span>Mentors & Companions</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content mentor-icon-container">
+        <a href="https://gemini.google.com/" target="_blank" class="mentor-icon" aria-label="Gemini AI">
+          <img src="/assets/img/ai/gemini-color.svg" alt="Gemini AI" />
+          <span>Gemini</span>
+        </a>
+        <a href="https://chat.openai.com/" target="_blank" class="mentor-icon" aria-label="ChatGPT">
+          <img src="/assets/img/ai/openai.svg" alt="ChatGPT" />
+          <span>ChatGPT</span>
+        </a>
+        <a href="https://claude.ai/" target="_blank" class="mentor-icon" aria-label="Claude AI">
+          <img src="/assets/img/ai/claude-color.svg" alt="Claude AI" />
+          <span>Claude</span>
+        </a>
+        <a href="https://chat.deepseek.com/" target="_blank" class="mentor-icon" aria-label="DeepSeek AI">
+          <img src="/assets/img/ai/deepseek-color.svg" alt="DeepSeek AI" />
+          <span>DeepSeek</span>
+        </a>
+        <a href="https://chat.qwen.ai/" target="_blank" class="mentor-icon" aria-label="Qwen AI">
+          <img src="/assets/img/ai/qwen-color.svg" alt="Qwen AI" />
+          <span>Qwen</span>
+        </a>
+        <a href="https://www.meta.ai/" target="_blank" class="mentor-icon" aria-label="Meta AI">
+          <img src="/assets/img/ai/metaai-color.svg" alt="Meta AI" />
+          <span>Meta AI</span>
+        </a>
+        <a href="https://manus.im/app" target="_blank" class="mentor-icon" aria-label="Manus AI">
+          <img src="/assets/img/ai/manus.png" alt="Manus AI" />
+          <span>Manus</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Jendela Suggestions -->
+    <article id="suggestion-window" class="window" style="width: 450px; height: 400px" aria-label="Suggestions Window">
+      <div class="title-bar">
+        <span>Suggestions</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content suggestion-content">
+        <h3>Saved Suggestions (Read-Only )</h3>
+        <div class="suggestion-display"></div>
+        <hr />
+        <h3>Leave a New Suggestion</h3>
+        <textarea class="suggestion-input" placeholder="Type your feedback here..."
+          aria-label="Suggestion Input"></textarea>
+        <button class="suggestion-save-btn">Save Suggestion</button>
+      </div>
+    </article>
+
+    <!-- Jendela Contact -->
+    <article id="contact-window" class="window" style="width: 480px; height: 350px" aria-label="Contact Window">
+      <div class="title-bar">
+        <span>Contact</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content contact-content">
+        <h2>Drop me a line</h2>
+        <div class="contact-icon-container">
+          <a href="https://github.com/0x41726469" target="_blank" class="contact-icon" aria-label="GitHub">
+            <img src="/assets/img/social/github-mark.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </a>
+          <a href="https://vercel.com/0x41726469s-projects" target="_blank" class="contact-icon" aria-label="Vercel">
+            <img src="/assets/img/social/vercel-icon-light.svg" alt="Vercel" />
+            <span>Vercel</span>
+          </a>
+          <a href="https://www.linkedin.com/in/0x41726469/" target="_blank" class="contact-icon" aria-label="LinkedIn">
+            <img src="/assets/img/social/InBug-Black.png" alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.instagram.com/0x41726469.sys/" target="_blank" class="contact-icon"
+            aria-label="Instagram">
+            <img src="/assets/img/social/Instagram_Glyph_Black.svg" alt="Instagram" />
+            <span>Instagram</span>
+          </a>
+          <a href="mailto:ardikingsblue33@gmail.com" class="contact-icon" aria-label="Email">
+            <img src="/assets/img/social/email-logo.png" alt="Email" />
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Jendela Terminal -->
+    <article id="terminal-window" class="window" aria-label="Terminal Window">
+      <div class="title-bar">
+        <span>Terminal</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content terminal-content">
+        <pre class="terminal-output"></pre>
+        <div class="terminal-input-line">
+          <label for="terminal-input-field">.arr:\></label>
+          <input type="text" id="terminal-input-field" class="terminal-input" autofocus aria-label="Terminal input" />
+        </div>
+      </div>
+    </article>
+
+    <!-- Jendela Snake Game -->
+    <article id="snake-window" class="window" style="width: 340px; height: 420px" aria-label="Snake Game Window">
+      <div class="title-bar">
+        <span>Snake</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content game-content">
+        <div class="game-header">
+          <span>Score: <span class="snake-score">0</span></span>
+          <span>High Score: <span class="snake-high-score">0</span></span>
+        </div>
+        <canvas id="snake-canvas" width="300" height="300" aria-label="Snake Game Canvas"></canvas>
+        <div class="snake-controls">
+          <button class="snake-control-btn snake-up" data-direction="up" aria-label="Move Snake Up">
+            ▲
+          </button>
+          <button class="snake-control-btn snake-left" data-direction="left" aria-label="Move Snake Left">
+            ◄
+          </button>
+          <button class="snake-control-btn snake-right" data-direction="right" aria-label="Move Snake Right">
+            ►
+          </button>
+          <button class="snake-control-btn snake-down" data-direction="down" aria-label="Move Snake Down">
+            ▼
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Jendela 2048 Game -->
+    <article id="2048-window" class="window" style="width: 340px; height: 420px" aria-label="2048 Game Window">
+      <div class="title-bar">
+        <span>2048</span>
+        <div class="title-bar-buttons">
+          <button class="minimize-btn" aria-label="Minimize Window">_</button>
+          <button class="maximize-btn" aria-label="Maximize Window">□</button>
+          <button class="close-btn" aria-label="Close Window">X</button>
+        </div>
+      </div>
+      <div class="window-content game-content">
+        <div class="game-header">
+          <span>Score: <span class="game-2048-score">0</span></span>
+          <button class="game-2048-reset" style="border: 1px outset #dfdfdf; background-color: #c0c0c0"
+            aria-label="Reset Game">
+            Reset
+          </button>
+        </div>
+        <div id="game-2048-grid" aria-label="2048 Game Grid"></div>
+        <div class="game-2048-controls" style="display: none">
+          <div class="game-2048-control-row">
+            <button class="game-2048-control-btn" data-direction="up" aria-label="Move Up">
+              ▲
+            </button>
+          </div>
+          <div class="game-2048-control-row">
+            <button class="game-2048-control-btn" data-direction="left" aria-label="Move Left">
+              ◄
+            </button>
+            <button class="game-2048-control-btn" data-direction="right" aria-label="Move Right">
+              ►
+            </button>
+          </div>
+          <div class="game-2048-control-row">
+            <button class="game-2048-control-btn" data-direction="down" aria-label="Move Down">
+              ▼
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Menu Start (tersembunyi secara default) -->
+  <aside id="start-menu" style="display: none" aria-label="Start Menu">
+    <nav>
+      <ul>
+        <li class="start-menu-item" data-window-template="about-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png" alt="About Me icon" />
+          About Me
+        </li>
+        <li class="start-menu-item" data-window-template="projects-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png" alt="Projects icon" />
+          Projects
+        </li>
+        <li class="start-menu-item" data-window-template="mentors-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/address_book_users.png" alt="Mentors icon" />
+          Mentors & Companions
+        </li>
+        <li class="start-menu-item" data-window-template="suggestion-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-5.png"
+            alt="Suggestions icon" />
+          Suggestions
+        </li>
+        <li class="start-menu-item" data-window-template="recycle-bin-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_full_2k-4.png" alt="Recycle Bin icon" />
+          Recycle Bin
+        </li>
+        <li class="start-menu-item" data-window-template="contact-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/modem-5.png" alt="Contact icon" />
+          Contact
+        </li>
+        <li class="start-menu-item" data-window-template="terminal-window" tabindex="0">
+          <img src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png" alt="Terminal icon" />
+          Terminal
+        </li>
+        <li class="start-menu-item" data-window-template="snake-window" tabindex="0">
+          <img src="https://s6.imgcdn.dev/YNaKtD.png" alt="Snake game icon" />
+          Snake
+        </li>
+        <li class="start-menu-item" data-window-template="2048-window" tabindex="0">
+          <img
+            src="https://play-lh.googleusercontent.com/WLGnCWjm6wQ5g1VY37kTuRORrRBMMlqYLqOpz0TP7Xj-jGUNE_Js2JJf76cEePLiz4Y=w240-h480-rw"
+            alt="2048 game icon" />
+          2048
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Taskbar di bagian bawah -->
+  <footer class="taskbar">
+    <button id="start-button" aria-label="Start Menu">.arr</button>
+    <div id="taskbar-apps"></div>
+    <div id="admin-control" title="Admin Controls" aria-label="Admin Controls" tabindex="0">
+      <img src="https://win98icons.alexmeub.com/icons/png/keys-0.png" alt="Admin Controls" />
+    </div>
+    <div id="clock" aria-label="Current Time"></div>
+  </footer>
+
+  <!-- Overlay untuk CAPTCHA verification -->
+  <div id="captcha-overlay">
+    <div id="captcha-modal">
+      <h2>Verification Required</h2>
+      <p id="captcha-question"></p>
+      <form id="captcha-form">
+        <label for="captcha-input" class="visually-hidden">Captcha Answer</label>
+        <input type="number" id="captcha-input" required autocomplete="off" aria-label="Captcha Answer" />
+        <button type="submit">Submit</button>
+      </form>
+      <p id="captcha-error"></p>
+    </div>
+  </div>
+
+  <!-- Pesan untuk konfirmasi CAPTCHA benar -->
+  <div id="correct-message">Correct!</div>
+
+  <!-- Script eksternal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
